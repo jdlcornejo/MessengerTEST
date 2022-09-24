@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EDModelMessagerStoreContainer" CdmEntityContainer="MessageEntities">
+    <EntitySetMapping Name="tblMessages">
+      <EntityTypeMapping TypeName="EDModelMessager.tblMessages">
+        <MappingFragment StoreEntitySet="tblMessages">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="ToNumber" ColumnName="ToNumber" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMessagesSend">
+      <EntityTypeMapping TypeName="EDModelMessager.tblMessagesSend">
+        <MappingFragment StoreEntitySet="tblMessagesSend">
+          <ScalarProperty Name="MessageSendID" ColumnName="MessageSendID" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+          <ScalarProperty Name="ConfirmatedCode" ColumnName="ConfirmatedCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

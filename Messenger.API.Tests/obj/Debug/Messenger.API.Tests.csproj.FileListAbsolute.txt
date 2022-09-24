@@ -1,0 +1,2 @@
+C:\Users\Daniel\source\repos\Messenger\Messenger.API.Tests\obj\Debug\Messenger.API.Tests.csproj.AssemblyReference.cache
+C:\Users\Daniel\source\repos\Messenger\Messenger.API.Tests\obj\Debug\Messenger.API.Tests.csproj.CoreCompileInputs.cache

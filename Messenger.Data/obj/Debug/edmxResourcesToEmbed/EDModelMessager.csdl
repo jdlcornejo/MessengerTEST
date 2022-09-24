@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EDModelMessager" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblMessages">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ToNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblMessagesSend" Relationship="Self.FK_tblMessageSend_tblMessages" FromRole="tblMessages" ToRole="tblMessagesSend" />
+  </EntityType>
+  <EntityType Name="tblMessagesSend">
+    <Key>
+      <PropertyRef Name="MessageSendID" />
+    </Key>
+    <Property Name="MessageSendID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MessageID" Type="Int32" Nullable="false" />
+    <Property Name="DateSent" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ConfirmatedCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblMessages" Relationship="Self.FK_tblMessageSend_tblMessages" FromRole="tblMessagesSend" ToRole="tblMessages" />
+  </EntityType>
+  <Association Name="FK_tblMessageSend_tblMessages">
+    <End Role="tblMessages" Type="Self.tblMessages" Multiplicity="1" />
+    <End Role="tblMessagesSend" Type="Self.tblMessagesSend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMessages">
+        <PropertyRef Name="MessageID" />
+      </Principal>
+      <Dependent Role="tblMessagesSend">
+        <PropertyRef Name="MessageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MessageEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblMessages" EntityType="Self.tblMessages" />
+    <EntitySet Name="tblMessagesSend" EntityType="Self.tblMessagesSend" />
+    <AssociationSet Name="FK_tblMessageSend_tblMessages" Association="Self.FK_tblMessageSend_tblMessages">
+      <End Role="tblMessages" EntitySet="tblMessages" />
+      <End Role="tblMessagesSend" EntitySet="tblMessagesSend" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

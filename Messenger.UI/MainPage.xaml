@@ -1,0 +1,59 @@
+﻿<Page xmlns:my="using:Microsoft.Toolkit.Uwp.UI.Controls" 
+    x:Class="Messenger.UI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Messenger.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot Background="{ThemeResource SystemControlAccentAcrylicWindowAccentMediumHighBrush}" >
+            <Pivot.TitleTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="Messenger" Style="{ThemeResource HeaderTextBlockStyle}"/>
+                    </Grid>
+                </DataTemplate>
+            </Pivot.TitleTemplate>
+            <PivotItem Header="Message" Margin="0">
+                <Grid>
+                    <RelativePanel>
+                        <StackPanel x:Name="MessageArea" Margin="20">
+                            <TextBox x:Name="TxtMessage" Header= "Message" TextWrapping="Wrap" PlaceholderText="Type..." Margin="0,24,0,0" MaxLength="320" HorizontalAlignment="Left" Width="400" Height="85"  />
+                            <TextBox x:Name="TxtPhoneNumber" Header="Phone Number" PlaceholderText="+50377777777" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+                            <TextBlock x:Name="TxtAlert" Foreground="#FFF90101" FontSize="16" ></TextBlock>
+                        </StackPanel>
+                    </RelativePanel>
+                </Grid>
+               
+            </PivotItem>
+            <PivotItem Header="History Message" Margin="0">
+            <Grid>
+                <RelativePanel>
+                    <StackPanel x:Name="GridViewArea" Margin="20" Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+                        <my:DataGrid x:Name="gvListMessages" AutoGenerateColumns="True"  ItemsSource="{x:Bind ListMessagesResult}" SelectionChanged="gvListMessages_SelectionChanged" IsReadOnly="True"  />
+                    </StackPanel>
+                </RelativePanel>
+            </Grid>
+            </PivotItem>
+            <PivotItem Header="Response Twilio" Margin="0">
+                <Grid>
+                    <RelativePanel>
+                        <StackPanel x:Name="ResponseArea" Margin="20" Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+                            <TextBox x:Name="TxtResponseJSON" PlaceholderText="Choose one history message for details" TextWrapping="Wrap" Width="400" Height="550" />
+                        </StackPanel>
+                    </RelativePanel>
+                </Grid>
+            </PivotItem>
+            <Pivot.RightHeader>
+                <CommandBar OverflowButtonVisibility="Collapsed" Background="Transparent">
+                    <AppBarButton x:Name="btnEnviar" Label="Send" Tag="Send" Icon="Send" Click="btnEnviar_Click" HorizontalAlignment="Left" />
+                </CommandBar>
+            </Pivot.RightHeader>
+        </Pivot>
+        
+    </Grid>
+   
+</Page>

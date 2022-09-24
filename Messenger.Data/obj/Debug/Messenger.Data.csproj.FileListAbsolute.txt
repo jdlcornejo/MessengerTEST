@@ -1,0 +1,11 @@
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\Messenger.Data.dll.config
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\Messenger.Data.dll
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\Messenger.Data.pdb
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\EntityFramework.dll
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\EntityFramework.xml
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\obj\Debug\Messenger.Data.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\obj\Debug\Messenger.Data.csproj.CopyComplete
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\obj\Debug\Messenger.Data.dll
+C:\Users\Daniel\source\repos\Messenger\Messenger.Data\obj\Debug\Messenger.Data.pdb

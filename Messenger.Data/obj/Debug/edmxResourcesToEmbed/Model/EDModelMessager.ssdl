@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EDModelMessager.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblConfig">
+    <Key>
+      <PropertyRef Name="ConfigID" />
+    </Key>
+    <Property Name="ConfigID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KeyValue" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMessages">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="ToNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMessagesSend">
+    <Key>
+      <PropertyRef Name="MessageSendID" />
+    </Key>
+    <Property Name="MessageSendID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageID" Type="int" Nullable="false" />
+    <Property Name="DateSent" Type="datetime" Nullable="false" />
+    <Property Name="ConfirmatedCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResponseJSON" Type="varchar" MaxLength="8000" />
+  </EntityType>
+  <Association Name="FK_tblMessageSend_tblMessages">
+    <End Role="tblMessages" Type="Self.tblMessages" Multiplicity="1" />
+    <End Role="tblMessagesSend" Type="Self.tblMessagesSend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMessages">
+        <PropertyRef Name="MessageID" />
+      </Principal>
+      <Dependent Role="tblMessagesSend">
+        <PropertyRef Name="MessageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EDModelMessagerStoreContainer">
+    <EntitySet Name="tblConfig" EntityType="Self.tblConfig" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMessages" EntityType="Self.tblMessages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMessagesSend" EntityType="Self.tblMessagesSend" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblMessageSend_tblMessages" Association="Self.FK_tblMessageSend_tblMessages">
+      <End Role="tblMessages" EntitySet="tblMessages" />
+      <End Role="tblMessagesSend" EntitySet="tblMessagesSend" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
