@@ -1,1 +1,1 @@
-C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Messenger.UI.csproj;x86
+C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Messenger.UI.csproj;x86

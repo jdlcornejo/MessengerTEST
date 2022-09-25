@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4H1YoBsSpEWwUK6s/lS6CANMBFTK7HAjAZWCWwyeoz7JxM0uNsTBGbxy3cOymlYzIWlIV2h+h1Ti5GUs0pgyZw==",
+  "dgSpecHash": "NbBzJ9akovq3yVrtoqwlTMtYPJX82QvKQE+M/48+BuIfa+Pg7a9zj7w6dCNs0hQVWWm4/5hthRiu5kPPUokjow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniel\\source\\repos\\Messenger\\Messenger.UI\\Messenger.UI.csproj",
+  "projectFilePath": "C:\\Users\\Daniel\\source\\repos\\jdlcornejo\\MessengerTEST\\Messenger.UI\\Messenger.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",

@@ -41,6 +41,10 @@ namespace Messenger.API.Controllers
             try
             {
                 message = db.tblMessages.Find(id);
+                if (message == null) 
+                {
+                    message = new tblMessages();
+                }
 
             }
             catch (Exception ex)

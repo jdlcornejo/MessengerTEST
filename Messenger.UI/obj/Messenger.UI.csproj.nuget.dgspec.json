@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel\\source\\repos\\Messenger\\Messenger.UI\\Messenger.UI.csproj": {}
+    "C:\\Users\\Daniel\\source\\repos\\jdlcornejo\\MessengerTEST\\Messenger.UI\\Messenger.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel\\source\\repos\\Messenger\\Messenger.UI\\Messenger.UI.csproj": {
+    "C:\\Users\\Daniel\\source\\repos\\jdlcornejo\\MessengerTEST\\Messenger.UI\\Messenger.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\Messenger\\Messenger.UI\\Messenger.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\jdlcornejo\\MessengerTEST\\Messenger.UI\\Messenger.UI.csproj",
         "projectName": "Messenger.UI",
-        "projectPath": "C:\\Users\\Daniel\\source\\repos\\Messenger\\Messenger.UI\\Messenger.UI.csproj",
+        "projectPath": "C:\\Users\\Daniel\\source\\repos\\jdlcornejo\\MessengerTEST\\Messenger.UI\\Messenger.UI.csproj",
         "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel\\source\\repos\\Messenger\\Messenger.UI\\obj\\",
+        "outputPath": "C:\\Users\\Daniel\\source\\repos\\jdlcornejo\\MessengerTEST\\Messenger.UI\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

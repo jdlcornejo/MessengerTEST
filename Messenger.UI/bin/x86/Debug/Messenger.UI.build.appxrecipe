@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>81e81be8-6cc7-49b2-b7dc-5822085a1653</PackageIdentityName>
     <PackageIdentityPublisher>CN=Daniel</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Daniel\source\repos\Messenger\Messenger.UI\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\Messenger.UI.exe">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\Messenger.UI.exe">
       <PackagePath>entrypoint\Messenger.UI.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
@@ -70,43 +70,43 @@
     <AppxPackagedFile Include="C:\Users\Daniel\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\7.1.2\lib\uap10.0.17763\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\Messenger.UI.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\Messenger.UI.xr.xml">
       <PackagePath>Messenger.UI.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
@@ -115,10 +115,10 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\Messenger\Messenger.UI\bin\x86\Debug\Core\Messenger.UI.exe">
+    <AppxPackagedFile Include="C:\Users\Daniel\source\repos\jdlcornejo\MessengerTEST\Messenger.UI\bin\x86\Debug\Core\Messenger.UI.exe">
       <PackagePath>Messenger.UI.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
